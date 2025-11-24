@@ -313,6 +313,20 @@ header {
     justify-content: space-between;
 }
 
+.event_chamga_htwo {
+    width: 164px;
+    height: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #b7e5cc;
+    display: flex;
+    align-items: center;
+}
+
+.event_chamga_htwo>h2 {
+    margin-left: 5px;
+}
+
 .event_chamga_set {
     width: 670px;
     height: 105px;
@@ -423,13 +437,21 @@ header {
     width: 1400px;
     height: 230px;
     margin: 0 auto;
+    background-color: #edf0f7;
 }
 
 .goodmenutitle {
-    width: 1400px;
+    width: 92px;
     height: 30px;
     display: flex;
     align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #d4d3e8;
+}
+
+.goodmenutitle>h2 {
+    margin-left: 5px;
 }
 
 .goodmenutitle>object {
@@ -442,7 +464,6 @@ header {
 .goodmenulist {
     width: 1400px;
     height: 200px;
-    background-color: rgb(243, 242, 242);
     display: flex;
 }
 
@@ -457,6 +478,7 @@ header {
     margin-top: 15px;
     margin-left: 15px;
     margin-bottom: 3px;
+    transition: all 0.2s ease 0s;
 }
 
 .menufile>p {
@@ -468,23 +490,33 @@ header {
     text-align: center;
 }
 
+.menufile:hover>img {
+    width: 148px;
+    height: 148px;
+}
+
 
 .sharpfindbread {
     width: 1400px;
-    height: 595px;
+    height: 580px;
     margin: 0 auto;
 }
 
-.sharpfindbreadtitle {
-    width: 1400px;
-    height: 45px;
+.sharpfindbread_title {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #d4d3e8;
 }
 
-/* 이거 다른 곳에도 참고하기~~~~~~~~~~ */
-.sharpfindbreadtitle>h2 {
-    margin: 0;
-    line-height: px;
+.sharpfindbread_title>h2 {
+    margin-left: 5px;
 }
+
+
 
 .sharpfindbreadlist {
     width: 1400px;
