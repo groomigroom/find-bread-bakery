@@ -10,230 +10,1062 @@
 
 <body>
     <header>
-        <object data="./img/find bread logo.svg" type="image/svg+xml" alt="로고" class="headerlogo"></object>
+        <div class="headerlogo" onclick="showPage('find_bread_main_page')">
+            <object data="./img/find bread logo.svg" type="image/svg+xml" alt="로고"></object>
+        </div>
         <ul class="gnb">
             <li class="gnbilban">
-                <a href="#">브랜드 소개</a>
+                <p>브랜드 소개</p>
                 <ul>
-                    <li><a href="#">인사말</a></li>
-                    <li><a href="#">브랜드 소개</a></li>
-                    <li><a href="#">매장 위치</a></li>
+                    <li onclick="showPage('find_bread_brand_insa')">
+                        <p>인사말</p>
+                    </li>
+                    <li onclick="showPage('find_bread_brand_soge')">
+                        <p>브랜드 소개</p>
+                    </li>
+                    <!--#####-->
+                    <li onclick="showPage('find_bread_brand_where')">
+                        <p>매장 위치</p>
+                    </li>
                 </ul>
             </li>
             <li class="gnbilban">
-                <a href="#">제품</a>
+                <p>제품</p>
                 <ul>
-                    <li><a href="#">빵</a></li>
-                    <li><a href="#">케이크</a></li>
-                    <li><a href="#">음료</a></li>
+                    <li onclick="showPage('find_bread_thing_bread')">
+                        <p>빵</p>
+                    </li>
+                    <li onclick="showPage('find_bread_thing_cake')">
+                        <p>케이크</p>
+                    </li>
+                    <li onclick="showPage('find_bread_thing_drink')">
+                        <p>음료</p>
+                    </li>
                 </ul>
             </li>
             <li class="gnbteksu">
-                <a href="#">이벤트</a>
+                <p>이벤트</p>
                 <ul>
-                    <li><a href="#">이벤트 목록</a></li>
-                    <li><a href="#">당첨자 목록</a></li>
+                    <li onclick="showPage('find_bread_event_list')">
+                        <p>이벤트 목록</p>
+                    </li>
+                    <li onclick="showPage('find_bread_event_dangchum')">
+                        <p>당첨자 목록</p>
+                    </li>
                 </ul>
             </li>
-            <li class="gnbilban">
-                <a href="#">창업 안내</a>
+            <li class="gnbilban" onclick="showPage('find_bread_store_open_anne')">
+                <p>창업 안내</p>
             </li>
-            <li class="gnbilban">
-                <a href="#">매장 안내</a>
+            <li class="gnbilban" onclick="showPage('find_bread_store_anne')">
+                <p>매장 안내</p>
             </li>
         </ul>
 
     </header>
-    <div class="newmenu">
-        <p>find bread에서 <br>
-            민트초코빵을 만나보세요!</p>
-        <img src="./img/mincho-bbang-main.jpg" alt="민초빵 메인메뉴">
+    <div id="find_bread_main_page" class="page_select" style="display: block">
+        <div class="newmenu">
+            <p>find bread에서 <br>
+                민트초코빵을 만나보세요!</p>
+            <img src="./img/mincho-bbang-main.jpg" alt="민초빵 메인메뉴">
+        </div>
+        <div class="event">
+            <div class="event_sinchung">
+                <div class="event_sinchung_startpp">
+                    <p>달콤하고 상쾌한 ‘민초빵’으로 <br>
+                        재치 넘치는 삼행시를 지어주세요!<br>
+                        센스 있는 작품을 보내주신 5분께<br>
+                        민초빵 10개씩을 선물로 드립니다.</p>
+                </div>
+                <div class="event_sinchung_nalzza">
+                    <p>기간 : 0000.00.00~0000.00.00.</p>
+                </div>
+                <div class="event_sinchung_cham">
+                    <p>참여하기</p>
+                </div>
+                <div class="event_img_mak"></div>
+                <div class="event_img"><img src="./img/minchobbang-hangsa-img.jpg" alt="민초빵 행사"></div>
+            </div>
+            <div class="event_chamga">
+                <div class="event_chamga_htwo">
+                    <h2>삼행시 참여작 목록</h2>
+                </div>
+                <div class="event_chamga_set">
+                    <p><span class="event_chamga_set_span_color_one">민</span> 들레처럼 퍼지는 달콤한 향기,<br>
+                        <span class="event_chamga_set_span_color_two">초</span> 코 속에 숨은 상쾌한 민트,<br>
+                        <span class="event_chamga_set_span_color_three">빵</span> 한 입에 행복이 사르르 녹아요.
+                    </p>
+                    <img src="./img/samhangsi-background.jpg" alt="삼행시 배경">
+                </div>
+                <div class="event_chamga_set">
+                    <p><span class="event_chamga_set_span_color_one">민</span> 초는 배신하지 않는다,<br>
+                        <span class="event_chamga_set_span_color_two">초</span> 콜릿과의 조화는 완벽하다,<br>
+                        <span class="event_chamga_set_span_color_three">빵</span> 속에서도 당당히 민초는 존재한다!
+                    </p>
+                    <img src="./img/samhangsi-background.jpg" alt="삼행시 배경">
+                </div>
+                <div class="event_chamga_set">
+                    <p><span class="event_chamga_set_span_color_one">민</span> 초 좋아하냐고 물으면,<br>
+                        <span class="event_chamga_set_span_color_two">초</span> 면에 고개를 끄덕인다.<br>
+                        <span class="event_chamga_set_span_color_three">빵</span> 터지는 민초의 매력, 중독 주의!
+                    </p>
+                    <img src="./img/samhangsi-background.jpg" alt="삼행시 배경">
+                </div>
+                <div class="event_bingong"></div>
+            </div>
+        </div>
+        <!-- 인기 제품 -->
+        <div class="goodmenu">
+            <div class="goodmenutitle">
+                <h2>인기 제품</h2>
+            </div>
+            <div class="goodmenulist">
+                <div class="menufile">
+                    <img src="./img/minchobbang.png" alt="민초빵" />
+                    <p>민트초코빵</p>
+                </div>
+                <div class="menufile">
+                    <img src="./img/bagelsandpng.png" alt="베이글샌드위치" />
+                    <p>베이글 샌드위치</p>
+                </div>
+                <div class="menufile">
+                    <img src="./img/chocosibbangpng.png" alt="초코식빵" />
+                    <p>초코 식빵</p>
+                </div>
+                <div class="menufile">
+                    <img src="./img/mintsibbangpng.png" alt="민트식빵" />
+                    <p>민트 식빵</p>
+                </div>
+                <div class="menufile">
+                    <img src="./img/saltbreadpng.png" alt="소금빵" />
+                    <p>소금빵</p>
+                </div>
+                <div class="menufile">
+                    <img src="./img/saltsoborobreadpng.png" alt="소보로소금빵" />
+                    <p>소보로 소금빵</p>
+                </div>
+                <div class="menufile">
+                    <img src="./img/soborobreadpng.png" alt="소보로빵" />
+                    <p>소보로빵</p>
+                </div>
+                <div class="menufile">
+                    <img src="./img/tonggokmulbbangpng.png" alt="통곡물빵" />
+                    <p>통곡물빵</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sharpfindbread">
+            <div class="sharpfindbread_title">
+                <h2>#findbread</h2>
+            </div>
+            <div class="sharpfindbreadlist">
+                <div class="sharpfindbreadtrain">
+                    <div class="sharpfindbreadfile">
+                        <div class="sharpfindbreadfilehead">
+                            <img src="./img/insta_mincho_bread.jpg" alt="englishhappy">
+                            <p>englishhappy</p>
+                        </div>
+                        <img src="./img/insta_mincho_bread.jpg" alt="인스타 민초빵">
+                        <div class="sharpfindbreadfiletags">
+                            <p>영어 유치원에서 아이들에게 민트초코빵 주니 좋아하더라고요!
+                                역시 전세계에서 좋아하는 맛 같아요~! <br>
+                                #영어유치원 #민트초코빵 #민트 #초코 #민초 #민트초코 #findbread</p>
+                        </div>
+                    </div>
+                    <div class="sharpfindbreadfile">
+                        <div class="sharpfindbreadfilehead">
+                            <img src="./img/insta_bagel_sandwich.jpg" alt="jikjangineu">
+                            <p>jikjangineu</p>
+                        </div>
+                        <img src="./img/insta_bagel_sandwich.jpg" alt="인스타 베이글샌드위치">
+                        <div class="sharpfindbreadfiletags">
+                            <p>점심 식사로 먹은 샌드위치 <br>
+                                #베이글 #샌드위치 #든든 #findbread</p>
+                        </div>
+                    </div>
+                    <div class="sharpfindbreadfile">
+                        <div class="sharpfindbreadfilehead">
+                            <img src="./img/insta_chocosibbang.jpg" alt="idlejoajoa">
+                            <p>idlejoajoa</p>
+                        </div>
+                        <img src="./img/insta_chocosibbang.jpg" alt="인스타 초코식빵">
+                        <div class="sharpfindbreadfiletags">
+                            <p>아이들이 좋아하는 초코식빵!!!
+                                달달해서 그런지 아이들이 잘 먹네요~!! <br>
+                                #초코식빵 #초코 #식빵 #findbread</p>
+                        </div>
+                    </div>
+                    <div class="sharpfindbreadfile">
+                        <div class="sharpfindbreadfilehead">
+                            <img src="./img/insta_mintsibbang.jpg" alt="mintsikbbangchat">
+                            <p>mintsikbbangchat</p>
+                        </div>
+                        <img src="./img/insta_mintsibbang.jpg" alt="인스타 민트식빵">
+                        <div class="sharpfindbreadfiletags">
+                            <p>I went to Korea and finally bought the specialty mint bread~!
+                                I think it'll be delicious!! <br>
+                                #mint #bread #good #food #findbread</p>
+                        </div>
+                    </div>
+                    <div class="sharpfindbreadfile">
+                        <div class="sharpfindbreadfilehead">
+                            <img src="./img/insta_sogumbbang.jpg" alt="hakwongongbuu">
+                            <p>hakwongongbuu</p>
+                        </div>
+                        <img src="./img/insta_sogumbbang.jpg" alt="인스타 소금빵">
+                        <div class="sharpfindbreadfiletags">
+                            <p>간식으로 먹은 소금빵 <br>
+                                #소금빵 #salt #소금 #빵 #간식 #findbread</p>
+                        </div>
+                    </div>
+                    <div class="sharpfindbreadfile">
+                        <div class="sharpfindbreadfilehead">
+                            <img src="./img/insta_sogumsoboro.jpg" alt="bbangtamhum">
+                            <p>bbangtamhum</p>
+                        </div>
+                        <img src="./img/insta_sogumsoboro.jpg" alt="인스타 소금소보로빵">
+                        <div class="sharpfindbreadfiletags">
+                            <p>새로운 조화가 궁금해서 구매해 봤어요~! <br>
+                                #소금 #소보로 #빵 #맛있어 #findbread</p>
+                        </div>
+                    </div>
+                    <div class="sharpfindbreadfile">
+                        <div class="sharpfindbreadfilehead">
+                            <img src="./img/insta_soboro.jpg" alt="newbbanggood">
+                            <p>newbbanggood</p>
+                        </div>
+                        <img src="./img/insta_soboro.jpg" alt="인스타 소보로빵">
+                        <div class="sharpfindbreadfiletags">
+                            <p>길가다가 보이길레 오랜만에 먹었어요~! <br>
+                                #소보로 #달달 #빵 #findbread</p>
+                        </div>
+                    </div>
+                    <div class="sharpfindbreadfile">
+                        <div class="sharpfindbreadfilehead">
+                            <img src="./img/insta_tonggokmul.jpg" alt="nadeuleek">
+                            <p>nadeuleek</p>
+                        </div>
+                        <img src="./img/insta_tonggokmul.jpg" alt="인스타 통곡물빵">
+                        <div class="sharpfindbreadfiletags">
+                            <p>친구들이랑 이번에 소풍가서 통곡물빵 먹었는데, 맛있더라고요.! <br>
+                                #통곡물빵 #고소한맛 #질리지않아요 #findbread</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="event">
-        <div class="event_sinchung">
-            <div class="event_sinchung_startpp">
-                <p>달콤하고 상쾌한 ‘민초빵’으로 <br>
-                    재치 넘치는 삼행시를 지어주세요!<br>
-                    센스 있는 작품을 보내주신 5분께<br>
-                    민초빵 10개씩을 선물로 드립니다.</p>
-            </div>
-            <div class="event_sinchung_nalzza">
-                <p>기간 : 0000.00.00~0000.00.00.</p>
-            </div>
-            <div class="event_sinchung_cham">
-                <p>참여하기</p>
-            </div>
-            <div class="event_img_mak"></div>
-            <div class="event_img"><img src="./img/minchobbang-hangsa-img.jpg" alt="민초빵 행사"></div>
+    <!--인사말용-->
+    <div id="find_bread_brand_insa" class="page_select" style="display: none">
+        <h2 class="img_part_title">인사말</h2>
+        <div class="find_bread_brand_insa_background">
+            <p>'find bread'에서는 여러분이 원하는 빵을 다양하게 만나볼 수 있습니다.
+                저희는 일상의 작은 행복이 될 수 있는 빵 한 조각을 만들기 위해, 새로운 메뉴를 꾸준히 연구하고 개발하며 더욱 풍성한 맛을 선보이고 있습니다.
+                앞으로도 여러분이 찾고 싶었던, 그리고 앞으로 찾게 될 다양한 빵을 정성스럽게 만들어 드리는 'find bread'가 되기 위해 노력하겠습니다.
+                늘 신선함과 풍미를 담아, 여러분의 취향을 찾아가는 빵집이 되겠습니다.</p>
         </div>
-        <div class="event_chamga">
-            <div class="event_chamga_htwo">
-                <h2>삼행시 참여작 목록</h2>
+
+    </div>
+    <!--브랜드 소개용-->
+    <div id="find_bread_brand_soge" class="page_select" style="display: none">
+        <h2 class="img_part_title">브랜드 소개</h2>
+    </div>
+    <!--매장위치용-->
+    <div id="find_bread_brand_where" class="page_select" style="display: none">
+        <h2 class="img_part_title">매장위치</h2>
+        <div class="find_bread_brand_where_wrap">
+            <input type="radio" name="find_bread_brand_where_tabmenu" id="find_bread_brand_where_tab_one"
+                checked="checked">
+            <input type="radio" name="find_bread_brand_where_tabmenu" id="find_bread_brand_where_tab_two">
+            <input type="radio" name="find_bread_brand_where_tabmenu" id="find_bread_brand_where_tab_three">
+            <input type="radio" name="find_bread_brand_where_tabmenu" id="find_bread_brand_where_tab_four">
+            <input type="radio" name="find_bread_brand_where_tabmenu" id="find_bread_brand_where_tab_five">
+            <div class="find_bread_brand_where_content find_bread_brand_where_slideone"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101202.71010717218!2d126.89173961088026!3d37.56484746648075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2z7ISc7Jq47Yq567OE7Iuc!5e0!3m2!1sko!2skr!4v1764649249843!5m2!1sko!2skr"
+                    width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="find_bread_brand_where_content find_bread_brand_where_slidetwo">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104386.36786626352!2d126.75090131544998!3d35.154775290206125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3571892301f5a7af%3A0x5f4d2ed0125f548!2z6rSR7KO86rSR7Jet7Iuc!5e0!3m2!1sko!2skr!4v1764734168172!5m2!1sko!2skr"
+                    width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="event_chamga_set">
-                <p><span class="event_chamga_set_span_color_one">민</span> 들레처럼 퍼지는 달콤한 향기,<br>
-                    <span class="event_chamga_set_span_color_two">초</span> 코 속에 숨은 상쾌한 민트,<br>
-                    <span class="event_chamga_set_span_color_three">빵</span> 한 입에 행복이 사르르 녹아요.
-                </p>
-                <img src="./img/samhangsi-background.jpg" alt="삼행시 배경">
+            <div class="find_bread_brand_where_content find_bread_brand_where_slidethree">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208684.99564468203!2d128.8685141595661!3d35.18895290662195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb6de823cd35%3A0x35d8cb74247108a7!2z67aA7IKw6rSR7Jet7Iuc!5e0!3m2!1sko!2skr!4v1764734369673!5m2!1sko!2skr"
+                    width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="event_chamga_set">
-                <p><span class="event_chamga_set_span_color_one">민</span> 초는 배신하지 않는다,<br>
-                    <span class="event_chamga_set_span_color_two">초</span> 콜릿과의 조화는 완벽하다,<br>
-                    <span class="event_chamga_set_span_color_three">빵</span> 속에서도 당당히 민초는 존재한다!
-                </p>
-                <img src="./img/samhangsi-background.jpg" alt="삼행시 배경">
+            <div class="find_bread_brand_where_content find_bread_brand_where_slidefour">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425552.49472299404!2d126.22695779957682!3d33.56301786182375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350ce3544cc84045%3A0x66bc36d2981ebf31!2z7KCc7KO87Yq567OE7J6Q7LmY64-E!5e0!3m2!1sko!2skr!4v1764734529291!5m2!1sko!2skr"
+                    width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="event_chamga_set">
-                <p><span class="event_chamga_set_span_color_one">민</span> 초 좋아하냐고 물으면,<br>
-                    <span class="event_chamga_set_span_color_two">초</span> 면에 고개를 끄덕인다.<br>
-                    <span class="event_chamga_set_span_color_three">빵</span> 터지는 민초의 매력, 중독 주의!
-                </p>
-                <img src="./img/samhangsi-background.jpg" alt="삼행시 배경">
+            <div class="find_bread_brand_where_content find_bread_brand_where_slidefive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102841.28144671048!2d127.32068050135874!3d36.34163799910988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356548d7ba4a6601%3A0xd196d69d988ad3b5!2z64yA7KCE6rSR7Jet7Iuc!5e0!3m2!1sko!2skr!4v1764734635744!5m2!1sko!2skr"
+                    width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="event_bingong"></div>
+            <div class="find_bread_brand_where_btn">
+                <label for="find_bread_brand_where_tab_one">서울점</label>
+                <label for="find_bread_brand_where_tab_two">광주점</label>
+                <label for="find_bread_brand_where_tab_three">부산점</label>
+                <label for="find_bread_brand_where_tab_four">제주점</label>
+                <label for="find_bread_brand_where_tab_five">대전점</label>
+            </div>
         </div>
     </div>
-    <!-- 인기 제품 -->
-    <div class="goodmenu">
-        <div class="goodmenutitle">
-            <h2>인기 제품</h2>
-        </div>
-        <div class="goodmenulist">
-            <div class="menufile">
-                <img src="./img/minchobbang.png" alt="민초빵" />
+    <!--빵 용-->
+    <div id="find_bread_thing_bread" class="page_select" style="display: none">
+        <h2 class="img_part_title">빵</h2>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_mintchoco.jpg" alt="민트초코빵">
+                </div>
                 <p>민트초코빵</p>
             </div>
-            <div class="menufile">
-                <img src="./img/bagelsandpng.png" alt="베이글샌드위치" />
-                <p>베이글샌드위치</p>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_bagel_sand.jpg" alt="베이글 샌드위치">
+                </div>
+                <p>베이글 샌드위치</p>
             </div>
-            <div class="menufile">
-                <img src="./img/chocosibbangpng.png" alt="초코식빵" />
-                <p>초코식빵</p>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_chocosikbbang.jpg" alt="초코 식빵">
+                </div>
+                <p>초코 식빵</p>
             </div>
-            <div class="menufile">
-                <img src="./img/mintsibbangpng.png" alt="민트식빵" />
-                <p>민트식빵</p>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_mintsikbbang.jpg" alt="민트 식빵">
+                </div>
+                <p>민트 식빵</p>
             </div>
-            <div class="menufile">
-                <img src="./img/saltbreadpng.png" alt="소금빵" />
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_salt.jpg" alt="소금빵">
+                </div>
                 <p>소금빵</p>
             </div>
-            <div class="menufile">
-                <img src="./img/saltsoborobreadpng.png" alt="소보로소금빵" />
-                <p>소보로소금빵</p>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_salt_soboro.jpg" alt="소보로 소금빵">
+                </div>
+                <p>소보로 소금빵</p>
             </div>
-            <div class="menufile">
-                <img src="./img/soborobreadpng.png" alt="소보로빵" />
+        </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_soboro.jpg" alt="소보로빵">
+                </div>
                 <p>소보로빵</p>
             </div>
-            <div class="menufile">
-                <img src="./img/tonggokmulbbangpng.png" alt="통곡물빵" />
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_allgokmul.jpg" alt="통곡물빵">
+                </div>
                 <p>통곡물빵</p>
             </div>
-        </div>
-    </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_creamfull.jpg" alt="크림 가득빵">
+                </div>
+                <p>크림 가득빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_mintcreamfull.jpg" alt="민트크림 가득빵">
+                </div>
+                <p>민트크림 가득빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_chococreamfull.jpg" alt="초코크림 가득빵">
+                </div>
+                <p>초코크림 가득빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_hoochoocreamfull.jpg" alt="후추크림 가득빵">
+                </div>
+                <p>후추크림 가득빵</p>
+            </div>
 
-    <div class="sharpfindbread">
-        <div class="sharpfindbread_title">
-            <h2>#findbread</h2>
         </div>
-        <div class="sharpfindbreadlist">
-            <div class="sharpfindbreadtrain">
-                <div class="sharpfindbreadfile">
-                    <div class="sharpfindbreadfilehead">
-                        <img src="./img/insta_mincho_bread.jpg" alt="englishhappy">
-                        <p>englishhappy</p>
-                    </div>
-                    <img src="./img/insta_mincho_bread.jpg" alt="인스타 민초빵">
-                    <div class="sharpfindbreadfiletags">
-                        <p>영어 유치원에서 아이들에게 민트초코빵 주니 좋아하더라고요!
-                            역시 전세계에서 좋아하는 맛 같아요~! <br>
-                            #영어유치원 #민트초코빵 #민트 #초코 #민초 #민트초코 #findbread</p>
-                    </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_dalgona_sikbbang.jpg" alt="달고나 식빵">
                 </div>
-                <div class="sharpfindbreadfile">
-                    <div class="sharpfindbreadfilehead">
-                        <img src="./img/insta_bagel_sandwich.jpg" alt="jikjangineu">
-                        <p>jikjangineu</p>
-                    </div>
-                    <img src="./img/insta_bagel_sandwich.jpg" alt="인스타 베이글샌드위치">
-                    <div class="sharpfindbreadfiletags">
-                        <p>점심 식사로 먹은 샌드위치 <br>
-                            #베이글 #샌드위치 #든든 #findbread</p>
-                    </div>
+                <p>달고나 식빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_mintpie.jpg" alt="민트 파이">
                 </div>
-                <div class="sharpfindbreadfile">
-                    <div class="sharpfindbreadfilehead">
-                        <img src="./img/insta_chocosibbang.jpg" alt="idlejoajoa">
-                        <p>idlejoajoa</p>
-                    </div>
-                    <img src="./img/insta_chocosibbang.jpg" alt="인스타 초코식빵">
-                    <div class="sharpfindbreadfiletags">
-                        <p>아이들이 좋아하는 초코식빵!!!
-                            달달해서 그런지 아이들이 잘 먹네요~!! <br>
-                            #초코식빵 #초코 #식빵 #findbread</p>
-                    </div>
+                <p>민트 파이</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_mintchocopie.jpg" alt="민트초코 파이">
                 </div>
-                <div class="sharpfindbreadfile">
-                    <div class="sharpfindbreadfilehead">
-                        <img src="./img/insta_mintsibbang.jpg" alt="mintsikbbangchat">
-                        <p>mintsikbbangchat</p>
-                    </div>
-                    <img src="./img/insta_mintsibbang.jpg" alt="인스타 민트식빵">
-                    <div class="sharpfindbreadfiletags">
-                        <p>I went to Korea and finally bought the specialty mint bread~!
-                            I think it'll be delicious!! <br>
-                            #mint #bread #good #food #findbread</p>
-                    </div>
+                <p>민트초코 파이</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_hoochoocream_sikbbang.jpg" alt="후추크림 식빵">
                 </div>
-                <div class="sharpfindbreadfile">
-                    <div class="sharpfindbreadfilehead">
-                        <img src="./img/insta_sogumbbang.jpg" alt="hakwongongbuu">
-                        <p>hakwongongbuu</p>
-                    </div>
-                    <img src="./img/insta_sogumbbang.jpg" alt="인스타 소금빵">
-                    <div class="sharpfindbreadfiletags">
-                        <p>간식으로 먹은 소금빵 <br>
-                            #소금빵 #salt #소금 #빵 #간식 #findbread</p>
-                    </div>
+                <p>후추크림 식빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_blackbean.jpg" alt="검정콩빵">
                 </div>
-                <div class="sharpfindbreadfile">
-                    <div class="sharpfindbreadfilehead">
-                        <img src="./img/insta_sogumsoboro.jpg" alt="bbangtamhum">
-                        <p>bbangtamhum</p>
-                    </div>
-                    <img src="./img/insta_sogumsoboro.jpg" alt="인스타 소금소보로빵">
-                    <div class="sharpfindbreadfiletags">
-                        <p>새로운 조화가 궁금해서 구매해 봤어요~! <br>
-                            #소금 #소보로 #빵 #맛있어 #findbread</p>
-                    </div>
+                <p>검정콩빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_bachu.jpg" alt="배추빵">
                 </div>
-                <div class="sharpfindbreadfile">
-                    <div class="sharpfindbreadfilehead">
-                        <img src="./img/insta_soboro.jpg" alt="newbbanggood">
-                        <p>newbbanggood</p>
-                    </div>
-                    <img src="./img/insta_soboro.jpg" alt="인스타 소보로빵">
-                    <div class="sharpfindbreadfiletags">
-                        <p>길가다가 보이길레 오랜만에 먹었어요~! <br>
-                            #소보로 #달달 #빵 #findbread</p>
-                    </div>
-                </div>
-                <div class="sharpfindbreadfile">
-                    <div class="sharpfindbreadfilehead">
-                        <img src="./img/insta_tonggokmul.jpg" alt="nadeuleek">
-                        <p>nadeuleek</p>
-                    </div>
-                    <img src="./img/insta_tonggokmul.jpg" alt="인스타 통곡물빵">
-                    <div class="sharpfindbreadfiletags">
-                        <p>친구들이랑 이번에 소풍가서 통곡물빵 먹었는데, 맛있더라고요.! <br>
-                            #통곡물빵 #고소한맛 #질리지않아요 #findbread</p>
-                    </div>
-                </div>
+                <p>배추빵</p>
             </div>
         </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_steak.jpg" alt="스테이크빵">
+                </div>
+                <p>스테이크빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_cottoncandy.jpg" alt="솜사탕빵">
+                </div>
+                <p>솜사탕빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_cookiebread.jpg" alt="쿠키빵">
+                </div>
+                <p>쿠키빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_ggaechalcream.jpg" alt="깨찰크림빵">
+                </div>
+                <p>깨찰크림빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_ggaechalmintcream.jpg" alt="깨찰민트크림빵">
+                </div>
+                <p>깨찰민트크림빵</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/bread_ggatnip.jpg" alt="깻잎빵">
+                </div>
+                <p>깻잎빵</p>
+            </div>
+        </div>
+        <p class="pp_bottom_span"> l <span>1</span> l <span>2</span> l <span>3</span> l <span>4</span> l <span>5</span>
+            l</p>
+    </div>
+    <!--#####-->
+    <!--케이크 용-->
+    <div id="find_bread_thing_cake" class="page_select" style="display: none">
+        <h2 class="img_part_title">케이크</h2>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_mintchococake.jpg" alt="민트초코 케이크">
+                </div>
+                <p>민트초코 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_mintcake.jpg" alt="민트 케이크">
+                </div>
+                <p>민트 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_chococake.jpg" alt="초코 케이크">
+                </div>
+                <p>초코 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_vanilacake.jpg" alt="바닐라 케이크">
+                </div>
+                <p>바닐라 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_moremintchococake.jpg" alt="더 진한 민초 케이크">
+                </div>
+                <p>더 진한 민초 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_ricecake.jpg" alt="쌀 케이크">
+                </div>
+                <p>쌀 케이크</p>
+            </div>
+        </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_dalgonacake.jpg" alt="달고나 케이크">
+                </div>
+                <p>달고나 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_malchacake.jpg" alt="말차 케이크">
+                </div>
+                <p>말차 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_moremalchacake.jpg" alt="더 진한 말차 케이크">
+                </div>
+                <p>더 진한 말차 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_moremintcake.jpg" alt="더 진한 민트 케이크">
+                </div>
+                <p>더 진한 민트 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_gogumacake.jpg" alt="고구마 케이크">
+                </div>
+                <p>고구마 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_gamjacake.jpg" alt="감자 케이크">
+                </div>
+                <p>감자 케이크</p>
+            </div>
+
+        </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_soborocake.jpg" alt="소보로 케이크">
+                </div>
+                <p>소보로 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_sikbbangcake.jpg" alt="식빵 케이크">
+                </div>
+                <p>식빵 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_nocreamcake.jpg" alt="크림없는 케이크">
+                </div>
+                <p>크림없는 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_icecreamcake.jpg" alt="얼음크림 케이크">
+                </div>
+                <p>얼음크림 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_peanutcake.jpg" alt="땅콩 케이크">
+                </div>
+                <p>땅콩 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_amondcake.jpg" alt="아몬드 케이크">
+                </div>
+                <p>아몬드 케이크</p>
+            </div>
+        </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_mintpeanut_cake.jpg" alt="민트 땅콩 케이크">
+                </div>
+                <p>민트 땅콩 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_mintamond_cake.jpg" alt="민트 아몬드 케이크">
+                </div>
+                <p>민트 아몬드 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_morningbread_cake.jpg" alt="모닝빵 케이크">
+                </div>
+                <p>모닝빵 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_milkcream_cake.jpg" alt="우유크림 케이크">
+                </div>
+                <p>우유크림 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_starcandy_cake.jpg" alt="별사탕 케이크">
+                </div>
+                <p>별사탕 케이크</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/cake_gunbbangcake.jpg" alt="건빵 케이크">
+                </div>
+                <p>건빵 케이크</p>
+            </div>
+        </div>
+        <p class="pp_bottom_span"> l <span>1</span> l <span>2</span> l <span>3</span> l <span>4</span> l <span>5</span>
+            l</p>
+    </div>
+    <!--#####-->
+    <!--음료 용-->
+    <div id="find_bread_thing_drink" class="page_select" style="display: none">
+        <h2 class="img_part_title">음료</h2>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_mintchocolatte.jpg" alt="민트초코 라떼">
+                </div>
+                <p>민트초코 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_mintlatte.jpg" alt="민트 라떼">
+                </div>
+                <p>민트 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_mintchocomilk.jpg" alt="민트초코 우유">
+                </div>
+                <p>민트초코 우유</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_mintmilk.jpg" alt="민트 우유">
+                </div>
+                <p>민트 우유</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_malchalatte.jpg" alt="말차 라떼">
+                </div>
+                <p>말차 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_malchamilk.jpg" alt="말차 우유">
+                </div>
+                <p>말차 우유</p>
+            </div>
+        </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_gogumalatte.jpg" alt="고구마 라떼">
+                </div>
+                <p>고구마 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_gogumamilk.jpg" alt="고구마 우유">
+                </div>
+                <p>고구마 우유</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_potatolatte.jpg" alt="감자 라떼">
+                </div>
+                <p>감자 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_potatomilk.jpg" alt="감자 우유">
+                </div>
+                <p>감자 우유</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_dalgonalatte.jpg" alt="달고나 라떼">
+                </div>
+                <p>달고나 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_dalgonamilk.jpg" alt="달고나 우유">
+                </div>
+                <p>달고나 우유</p>
+            </div>
+
+        </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_maesillatte.jpg" alt="매실 라떼">
+                </div>
+                <p>매실 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_maesilmilk.jpg" alt="매실 우유">
+                </div>
+                <p>매실 우유</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_gimbugaklatte.jpg" alt="김부각 라떼">
+                </div>
+                <p>김부각 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_gimbugakmilk.jpg" alt="김부각 우유">
+                </div>
+                <p>김부각 우유</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_mintnokcha_latte.jpg" alt="민트녹차 라떼">
+                </div>
+                <p>민트녹차 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_mintnokcha_milk.jpg" alt="민트녹차 우유">
+                </div>
+                <p>민트녹차 우유</p>
+            </div>
+        </div>
+        <div class="find_bread_thing_sixbox">
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_gokmullatte.jpg" alt="곡물 라떼">
+                </div>
+                <p>곡물 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_gogumamilk.jpg" alt="곡물 우유">
+                </div>
+                <p>곡물 우유</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_borilatte.jpg" alt="보리 라떼">
+                </div>
+                <p>보리 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_borimilk.jpg" alt="보리 우유">
+                </div>
+                <p>보리 우유</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_hoochoo_latte.jpg" alt="후추 라떼">
+                </div>
+                <p>후추 라떼</p>
+            </div>
+            <div class="find_bread_thing_boxone">
+                <div class="find_bread_thing_boxone_img">
+                    <img src="./img/drink_hoochoo_milk.jpg" alt="후추 우유">
+                </div>
+                <p>후추 우유</p>
+            </div>
+        </div>
+        <p class="pp_bottom_span"> l <span>1</span> l <span>2</span> l <span>3</span> l <span>4</span> l <span>5</span>
+            l</p>
+    </div>
+    <!--이벤트 목록 용-->
+    <div id="find_bread_event_list" class="page_select" style="display: none">
+        <h2 class="img_part_title">이벤트 목록</h2>
+        <table>
+            <tr>
+                <td>
+                    <p>No.</p>
+                </td>
+                <td>
+                    <p>제목</p>
+                </td>
+                <td>
+                    <p>작성자</p>
+                </td>
+                <td>
+                    <p>작성일</p>
+                </td>
+                <td>
+                    <p>조회수</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3333</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>민초빵 삼행시 이벤트</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>10777</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3332</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>신제품 출시 시식회</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>12334</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3331</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>한정판 시즌 빵 출시 & 스탬프 이벤트</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>22554</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3330</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>'내가 만든 빵' 레시피 공모전</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>24322</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3329</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>빵 포토 콘테스트</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>33455</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3328</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>빵 1+1 구매 이벤트</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>34233</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3327</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>대형 굽기 퍼포먼스 데이</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>34423</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3326</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>빵 정기구독 할인 이벤트</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>44423</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3325</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>고객 이름 라벨링 서비스</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>44244</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>3324</p>
+                </td>
+                <td>
+                    <a href="#">
+                        <p>아침 출근길 '무료 커피 데이'</p>
+                    </a>
+                </td>
+                <td>
+                    <p>find bread</p>
+                </td>
+                <td>
+                    <p>2025.</p>
+                </td>
+                <td>
+                    <p>44442</p>
+                </td>
+            </tr>
+        </table>
+
+        <p class="pp_bottom_span"> l <span>1</span> l <span>2</span> l <span>3</span> l <span>4</span> l <span>5</span>
+            l</p>
+    </div>
+    <!--당첨자 목록 용-->
+    <div id="find_bread_event_dangchum" class="page_select" style="display: none">
+        <h2 class="img_part_title">당첨자 목록</h2>
+    </div>
+    <!--창업 안내 용-->
+    <div id="find_bread_store_open_anne" class="page_select" style="display: none">
+        <h2 class="img_part_title">창업 안내</h2>
+    </div>
+    <!--http://gs25.gsretail.com/gscvs/ko/franchise-info/guide/process
+    https://www.ediya.com/C/contents/franchise_01.html
+    
+    <div class=“arrow_anne”>
+<div class=“arrow_anne_pp”>
+<p></p> <p></p> <p></p> <p></p>
+</div> 
+img
+</div>
+.arrow_anne{
+width: ;
+height: ;
+position: relative;
+}
+.arrow_anne_pp{
+width: ;
+height: ;
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 2;
+}
+.arrow_anne>img{
+width: ;
+height: ;
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+    
+    -->
+    <!--매장 안내 용-->
+    <div id="find_bread_store_anne" class="page_select" style="display: none">
+        <h2 class="img_part_title">매장 안내</h2>
     </div>
 
     <footer>
@@ -257,4 +1089,5 @@
 
 <!-- 기본마진 30px 
 기본 배경 색상 rgb(240, 240, 240); 
+7.5 15px
 -->
