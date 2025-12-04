@@ -95,6 +95,7 @@ body {
     color: #363642;
 }
 
+
 header {
     width: 1400px;
     height: 100px;
@@ -107,8 +108,15 @@ header {
 
 .headerlogo {
     height: 50px;
-    width: auto;
+    width: 60px;
     margin: 25px;
+    cursor: pointer;
+}
+
+.headerlogo>object {
+    height: 50px;
+    width: auto;
+    pointer-events: none;
 }
 
 .gnb {
@@ -122,7 +130,7 @@ header {
     z-index: 999;
 }
 
-.gnbilban>a {
+.gnbilban>p {
     display: flex;
     width: 200px;
     height: 40px;
@@ -130,7 +138,7 @@ header {
     justify-content: center;
 }
 
-.gnbteksu>a {
+.gnbteksu>p {
     display: flex;
     width: 200px;
     height: 40px;
@@ -138,7 +146,7 @@ header {
     justify-content: center;
 }
 
-.gnbilban>ul>li>a {
+.gnbilban>ul>li>p {
     display: flex;
     width: 200px;
     height: 30px;
@@ -146,7 +154,7 @@ header {
     justify-content: center;
 }
 
-.gnbteksu>ul>li>a {
+.gnbteksu>ul>li>p {
     display: flex;
     width: 200px;
     height: 30px;
@@ -159,6 +167,7 @@ header {
     height: 40px;
     overflow: hidden;
     transition: all 0.6s ease 0s;
+    cursor: pointer;
 }
 
 .gnbteksu {
@@ -166,6 +175,7 @@ header {
     height: 40px;
     overflow: hidden;
     transition: all 0.6s ease 0s;
+    cursor: pointer;
 }
 
 .gnbilban:hover {
@@ -180,15 +190,17 @@ header {
     border-bottom-right-radius: 10px;
 }
 
-.gnbilban>ul>li>a {
+.gnbilban>ul>li>p {
     background-color: #363642;
+    cursor: pointer;
 }
 
-.gnbteksu>ul>li>a {
+.gnbteksu>ul>li>p {
     background-color: #363642;
+    cursor: pointer;
 }
 
-.gnb a:hover {
+.gnb p:hover {
     color: rgb(248, 181, 184);
 }
 
@@ -470,6 +482,7 @@ header {
 .menufile {
     width: 175px;
     height: 200px;
+    cursor: pointer;
 }
 
 .menufile>img {
@@ -538,6 +551,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: left;
+    cursor: pointer;
 }
 
 .sharpfindbreadfilehead {
@@ -687,4 +701,328 @@ footer>p {
     top: 0;
     left: 0;
     z-index: 3;
+}
+
+#find_bread_brand_insa {
+    width: 1400px;
+    height: 530px;
+    margin: 0 auto;
+}
+
+.img_part_title {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 17.5px;
+    line-height: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #d4d3e8;
+}
+
+.find_bread_brand_insa_background {
+    width: 1400px;
+    height: 500px;
+    position: relative;
+    background: url('./img/find_bread_brand_insa_background.jpg');
+}
+
+.find_bread_brand_insa_background>p {
+    width: 446px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    color: #363642;
+}
+
+#find_bread_brand_soge {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#find_bread_brand_where {
+    width: 1400px;
+    height: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.find_bread_brand_where_wrap {
+    width: 1400px;
+    height: 500px;
+    position: relative;
+}
+
+input[name=find_bread_brand_where_tabmenu] {
+    display: none;
+}
+
+.find_bread_brand_where_content {
+    display: none;
+}
+
+.find_bread_brand_where_btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 500px;
+}
+
+.find_bread_brand_where_btn>label {
+    width: 300px;
+    height: 100px;
+    display: block;
+    background-color: rgb(116, 207, 207);
+    cursor: pointer;
+}
+
+.find_bread_brand_where_slideone {
+    width: 1100px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.find_bread_brand_where_slidetwo {
+    width: 1100px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.find_bread_brand_where_slidethree {
+    width: 1100px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.find_bread_brand_where_slidefour {
+    width: 1100px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.find_bread_brand_where_slidefive {
+    width: 1100px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+input[id=find_bread_brand_where_tab_one]:checked~.find_bread_brand_where_slideone {
+    display: block;
+}
+
+input[id=find_bread_brand_where_tab_two]:checked~.find_bread_brand_where_slidetwo {
+    display: block;
+}
+
+input[id=find_bread_brand_where_tab_three]:checked~.find_bread_brand_where_slidethree {
+    display: block;
+}
+
+input[id=find_bread_brand_where_tab_four]:checked~.find_bread_brand_where_slidefour {
+    display: block;
+}
+
+input[id=find_bread_brand_where_tab_five]:checked~.find_bread_brand_where_slidefive {
+    display: block;
+}
+
+input[id=find_bread_brand_where_tab_one]:checked~.find_bread_brand_where_btn>label:nth-child(1) {
+    background-color: rgb(234, 169, 247);
+}
+
+input[id=find_bread_brand_where_tab_two]:checked~.find_bread_brand_where_btn>label:nth-child(2) {
+    background-color: rgb(234, 169, 247);
+}
+
+input[id=find_bread_brand_where_tab_three]:checked~.find_bread_brand_where_btn>label:nth-child(3) {
+    background-color: rgb(234, 169, 247);
+}
+
+input[id=find_bread_brand_where_tab_four]:checked~.find_bread_brand_where_btn>label:nth-child(4) {
+    background-color: rgb(234, 169, 247);
+}
+
+input[id=find_bread_brand_where_tab_five]:checked~.find_bread_brand_where_btn>label:nth-child(5) {
+    background-color: rgb(234, 169, 247);
+}
+
+/*빵 용*/
+#find_bread_thing_bread {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #edeaef;
+}
+
+.find_bread_thing_sixbox {
+    width: 1335px;
+    height: 260px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.find_bread_thing_boxone {
+    width: 215px;
+    height: 260px;
+    padding-left: 45px;
+    padding-top: 45px;
+}
+
+.find_bread_thing_boxone_img {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transform-origin: center center;
+}
+
+.find_bread_thing_boxone_img>img {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.find_bread_thing_boxone_img:hover>img {
+    transform: scale(1.1);
+}
+
+.find_bread_thing_boxone>p {
+    font-family: 'Pretendard';
+    width: 170px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 15px;
+    letter-spacing: -0.02em;
+    color: #363642;
+    text-align: center;
+}
+
+.pp_bottom_span {
+    width: 1400px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.pp_bottom_span>span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#find_bread_thing_cake {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #edeaef;
+}
+
+#find_bread_thing_drink {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #edeaef;
+}
+
+#find_bread_event_list {
+    width: 1400px;
+    height: 799px;
+    margin: 0 auto;
+    background-color: #edeaef;
+}
+
+#find_bread_event_list>table {
+    width: 1400px;
+    border-collapse: collapse;
+}
+
+#find_bread_event_list>table>tbody>tr>td {
+    height: 40px;
+    border-bottom: 0.2px solid #363642;
+}
+
+#find_bread_event_list>table>tbody>tr>td>p {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: #363642;
+}
+
+#find_bread_event_list>table>tbody>tr>td:nth-child(2)>p {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #363642;
+}
+
+#find_bread_event_list>table>tbody>tr:nth-child(1) {
+    background-color: #f5eff9;
+
+}
+
+#find_bread_event_list>table>tbody>tr:nth-child(1)>td {
+    border-bottom: none;
+}
+
+#find_bread_event_list>table>tbody>tr>td:nth-child(1) {
+    width: 120px;
+}
+
+#find_bread_event_list>table>tbody>tr>td:nth-child(2) {
+    width: 920px;
+}
+
+#find_bread_event_list>table>tbody>tr>td:nth-child(3) {
+    width: 120px;
+}
+
+#find_bread_event_list>table>tbody>tr>td:nth-child(4) {
+    width: 120px;
+}
+
+/* 
+#find_bread_event_list>ul>li>a>p {
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #363642;
+} */
+
+#find_bread_event_dangchum {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#find_bread_store_open_anne {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#find_bread_store_anne {
+    width: 1400px;
+    margin: 0 auto;
 }
